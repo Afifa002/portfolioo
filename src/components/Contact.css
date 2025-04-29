@@ -1,0 +1,146 @@
+/* Contact.css - Dark Theme */
+
+#contactPage {
+    padding: 80px 20px;
+    /* background: linear-gradient(135deg, #000507, #02151b, #021118); */
+    background: rgb(30, 30, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  #contact {
+    max-width: 600px;
+    width: 100%;
+    background: rgba(30, 30, 30, 0.95);
+    padding: 50px 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    animation: fadeSlideUp 1s ease forwards;
+  }
+  
+  @keyframes fadeSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .contactpageTitle {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .contactDesc {
+    font-size: 1.1rem;
+    color: #bbbbbb;
+    margin-bottom: 35px;
+    display: block;
+  }
+  
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contactForm input,
+  .contactForm textarea {
+    width: 100%;
+    padding: 15px 18px;
+    border: 2px solid #555;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: #1e1e1e;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .contactForm input::placeholder,
+  .contactForm textarea::placeholder {
+    color: #777;
+  }
+  
+  .contactForm input:focus,
+  .contactForm textarea:focus {
+    border-color: #6a11cb;
+    background-color: #111;
+    outline: none;
+    box-shadow: 0 0 5px rgba(106, 17, 203, 0.5);
+  }
+  
+  .submitBtn {
+    padding: 14px 20px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.4s ease;
+  }
+  
+  .submitBtn:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+  }
+  
+  .links {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .links a {
+    display: inline-block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .links a:hover {
+    transform: scale(1.3);
+    filter: brightness(1.4);
+  }
+  
+  .link {
+    width: 45px;
+    height: 45px;
+    filter: brightness(0.85);
+  border-radius: 50%;
+  }
+  
+  .link:hover {
+    filter: brightness(1.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #contact {
+      padding: 40px 25px;
+    }
+  
+    .contactpageTitle {
+      font-size: 2.3rem;
+    }
+  
+    .contactDesc {
+      font-size: 1rem;
+    }
+  
+    .links {
+      gap: 20px;
+    }
+  
+    .link {
+      width: 40px;
+      height: 40px;
+    }
+  }
