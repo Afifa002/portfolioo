@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-scroll";
-import hireImg from "../assets/hireme.png";
+
 import "./Intro.css";
 const Intro = () => {
   return (
